@@ -22,7 +22,7 @@ public class prime{
         int pCont = 0;
         int x = 2;
         
-        while(pCont < 10_001){
+        while(pCont < 10001){
             if(isPrime(x)){
                 pCont++;
             } 
