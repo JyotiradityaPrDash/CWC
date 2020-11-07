@@ -13,19 +13,20 @@ public class palindrome {
 	}
 
 	public static void main(String[] args) {
-	      int p = 1;
+	      int p = 1, m = 0;
 	      
 	      for(int i = 999; i >= 100; i--) {
 	        for(int j = 999; j >= 100; j--){
 	        
 	        	p = i * j;
 	        
-	  	      if(palin(p) == p) {
-	  	    	 System.out.println(p);
-	  	      	System.exit(0);
+	  	      if(palin(p) == p && p > m) {
+	  	    	 m = p;
+	  	      	
 	  	      }
 	        		          
 	      }
 	  }
+		System.out.println(m);
 	}
 }
